@@ -3,11 +3,6 @@ echo "Criando chave ssh"
 
 echo "verificando se ja existe uma chave ssh"
 
-if [ " $EUID" -ne 0 ]; then
-	echo "Porfavor execute o script como root."
-	exit 1
-fi
-
 if [ -f ~/.ssh/id_ed25519 ]; then
 	echo "Você ja tem uma chave ssh"
 	read -p "Deseja criar uma nova chave ssh (s/n): " resposta
@@ -35,7 +30,7 @@ echo "Iniciando agente ssh"
 eval " $(ssh-agent -s) "
 ssh-add ~/.ssh/id_ed25519
 if [ $? -ne 0 ]; then
-	echo "Erro ao adicionar agente SSH"]	
+	echo "Erro ao adicionar agente SSH"
 	exit 1
 fi
 echo "Agente SSH adicionado com sucesso!!"
@@ -43,7 +38,15 @@ echo "Agente SSH adicionado com sucesso!!"
 echo "Chave publica gerada!!"
 cat ~/.ssh/id_25519.pub
 echo "Sua chave ssh"
-
+echo "Copie esta chave e cole no github."
+while [ "$confirmação" != "s" ]; do
+	read -p "Já Digitou a chave SSh no github?(s/n)" confirmacao
+	if [ "$confirmacao" != "s" ]; then
+		echo " Coloque sua chave no github! "
+	else
+		break
+	fi
+done
 echo "Testanto sua chave SSH"
 ssh -T git@github.com
 if [ $? -eq 0 ]; then
