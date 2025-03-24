@@ -39,7 +39,7 @@ echo "Chave publica gerada!!"
 cat ~/.ssh/id_25519.pub
 echo "Sua chave ssh"
 echo "Copie esta chave e cole no github."
-while [ "$confirmação" != "s" ]; do
+while [ "$confirmacao" != "s" ]; do
 	read -p "Já Digitou a chave SSh no github?(s/n)" confirmacao
 	if [ "$confirmacao" != "s" ]; then
 		echo " Coloque sua chave no github! "
