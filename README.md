@@ -23,3 +23,5 @@ Este projeto é um script Bash que automatiza o processo de criação de chaves 
    ```bash
    git clone [[URL do repositório]](https://github.com/Rodrigo-Kelven/script_chave_ssh
    cd script_chave_ssh
+   chmod +x Criar_ssh2.sh
+   ./Criar_ssh2.sh
