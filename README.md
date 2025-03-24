@@ -25,3 +25,9 @@ Este projeto é um script Bash que automatiza o processo de criação de chaves 
    cd script_chave_ssh
    chmod +x Criar_ssh2.sh
    ./Criar_ssh2.sh
+
+## Autores
+- [@Wesley Thiago](https://github.com/Wesley0071)
+
+## Contribuidores
+- [@Rodrigo_Kelven](https://github.com/Rodrigo-Kelven)
