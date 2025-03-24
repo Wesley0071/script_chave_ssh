@@ -1,4 +1,5 @@
 # Gerador de Chaves SSH
+## Versão 0.0.10
 
 Este projeto é um script Bash que automatiza o processo de criação de chaves SSH e configuração do agente SSH para uso com o GitHub. Ele verifica se já existe uma chave SSH, gera uma nova chave se necessário e orienta o usuário a adicionar a chave pública ao GitHub.
 
