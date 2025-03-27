@@ -60,3 +60,4 @@ Este projeto é um script Bash que automatiza o processo de criação de chaves 
 
 ## Contribuidores
 - [@Rodrigo_Kelven](https://github.com/Rodrigo-Kelven)
+- [@Raelsantana](https://github.com/Raelsantana)
